@@ -13,6 +13,7 @@ body {
   background: url("background.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+overflow-x: hidden;
 }
 
 .header {
@@ -40,7 +41,7 @@ body {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(107, 145, 110, 0.4),
+    rgba(153, 183, 202, 0.4),
     transparent
   );
   transition: 10s;
@@ -77,19 +78,20 @@ body {
 }
 a{
 text-decoration: solid;
-color: rgb(111, 123, 107);
+color: rgb(148, 152, 146);
 }
 /* BREAKPOINTS */
-@media (max-width: 992px) {
+@media (max-width: 1400px) {
   .header {
     padding: 1.25rem 4%;
   }
 }
 .main-container {
   display: flex;
+    flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 100px); /* Adjust as needed */
+   height: calc(130vh - 100px); /*Adjust as needed */
   margin-top: 100px; /* Adjust as needed */
 }
 
@@ -105,7 +107,7 @@ color: rgb(111, 123, 107);
   padding: 10px;
   margin: 0 20px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 7px 12px rgba(0, 0, 0, 0.1);
 }
 
 .box h2 {
