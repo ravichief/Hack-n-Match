@@ -64,11 +64,15 @@ overflow-x: hidden;
   font-size: 18px;
   text-decoration: none;
   margin-left: 35px;
-  transition: 0.3s;
+  /* transition: 0.3s; */
+  transition: transform 0.9s ease;
 }
 
 .navbar a:hover {
-  color: #f00;
+  color: #f00; 
+  text-decoration: underline; 
+  transform: scale(1.1); 
+  font-size: 1.3em;
 }
 
 #menu-icon {
@@ -81,7 +85,7 @@ text-decoration: solid;
 color: rgb(148, 152, 146);
 }
 /* BREAKPOINTS */
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   .header {
     padding: 1.25rem 4%;
   }
@@ -115,7 +119,7 @@ color: rgb(148, 152, 146);
   color: #333;
   font-size: 24px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   #menu-icon {
     display: block;
   }
